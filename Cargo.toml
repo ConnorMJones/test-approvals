@@ -1,0 +1,29 @@
+[package]
+name = "test-approvals"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.38.0", features = ["full"] }
+eyre = "0.6.12"
+alloy = { git = "https://github.com/alloy-rs/alloy", version = "^0.1.0",  features = [
+    "contract",
+    "network",
+    "node-bindings",
+    "providers",
+    "provider-http",
+    "provider-ipc",
+    "provider-ws",
+    "rpc-client",
+    "rpc-client-ipc",
+    "rpc-client-ws",
+    "rpc-types-eth",
+    "rpc-types-trace",
+    "signers",
+    "signer-keystore",
+    "signer-ledger",
+    "signer-mnemonic",
+    "signer-trezor",
+    "signer-local",
+    "signer-yubihsm",
+] }
